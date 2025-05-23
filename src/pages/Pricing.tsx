@@ -37,7 +37,7 @@ const pricingPlans = {
   development: [
     {
       name: "Basic",
-      price: "$2,999",
+      price: "Rs 4,999",
       period: "",
       description: "Simple website development",
       features: ["5-page Website", "Responsive Design", "Basic SEO Setup", "Contact Form", "3 Rounds of Revisions"],
@@ -45,8 +45,8 @@ const pricingPlans = {
     },
     {
       name: "Professional",
-      price: "$5,999",
-      period: "",
+      price: "Rs 14,999",
+      period: " ",
       description: "Advanced website with custom features",
       features: ["10-15 Pages", "Responsive Design", "Advanced SEO Setup", "CMS Integration", "E-commerce Features", "5 Rounds of Revisions"],
       buttonText: "Get Quote",
@@ -82,7 +82,11 @@ const Pricing = () => {
               <TabsTrigger value="development">Development Services</TabsTrigger>
             </TabsList>
             <TabsContent value="hosting">
-              <div className="grid md:grid-cols-3 gap-6">
+
+              // Hosting pricing details
+
+              {
+           false &&   <div className="grid md:grid-cols-3 gap-6">
                 {pricingPlans.hosting.map((plan, index) => (
                   <Card key={index} className={`flex flex-col h-full ${plan.popular ? "border-accent" : "border-border/50"}`}>
                     {plan.popular && (
@@ -114,6 +118,8 @@ const Pricing = () => {
                   </Card>
                 ))}
               </div>
+
+              }
             </TabsContent>
             <TabsContent value="development">
               <div className="grid md:grid-cols-3 gap-6">
