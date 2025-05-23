@@ -3,27 +3,26 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const testimonials = [
+
   {
-    content: "Stringbox transformed our business with their exceptional web development services. Our new e-commerce platform has increased conversions by 45%!",
-    author: "Sarah Johnson",
-    position: "CEO, FashionRetail",
+    content:
+      "Stringbox transformed our campus with a modern, feature-rich website. The real-time notice board and dynamic gallery updates have significantly improved how we communicate with students and faculty.",
+    author: "Biren Chettri",
+    position: "Campus Chief, Banke Bageshwori Campus",
     image: "",
-    initials: "SJ",
+    initials: "BC",
   },
   {
-    content: "The mobile app that Stringbox created for us has revolutionized how our students access course materials. Their technical expertise is unmatched.",
-    author: "Michael Chen",
-    position: "Director of IT, Educa University",
+    content:
+      "The custom e-commerce app developed by Stringbox has revolutionized how we connect with our customers. Their technical expertise and attention to UX helped us increase conversions by 45%.",
+    author: "Everest Paudel",
+    position: "Director, Carten.xyz",
     image: "",
-    initials: "MC",
+    initials: "EP",
   },
-  {
-    content: "Their DevOps solutions streamlined our deployment process, cutting our release time in half. The Stringbox team truly understands modern development workflows.",
-    author: "Alex Rodriguez",
-    position: "CTO, TechInnovate",
-    image: "",
-    initials: "AR",
-  },
+
+
+
 ];
 
 export function TestimonialsSection() {

@@ -81,9 +81,45 @@ const Pricing = () => {
               <TabsTrigger value="hosting">Hosting Services</TabsTrigger>
               <TabsTrigger value="development">Development Services</TabsTrigger>
             </TabsList>
+            <TabsContent value="development">
+              <div className="grid md:grid-cols-3 gap-6">
+                {pricingPlans.development.map((plan, index) => (
+                  <Card key={index} className={`flex flex-col h-full ${plan.popular ? "border-accent" : "border-border/50"}`}>
+                    {plan.popular && (
+                      <div className="bg-accent text-white text-center py-1 text-xs font-medium">MOST POPULAR</div>
+                    )}
+                    <CardHeader>
+                      <CardTitle className="text-2xl">{plan.name}</CardTitle>
+                      <div className="mt-4 flex items-baseline">
+                        <span className="text-3xl font-bold">{plan.price}</span>
+                        <span className="ml-1 text-sm text-muted-foreground">{plan.period}</span>
+                      </div>
+                      <p className="text-sm text-muted-foreground mt-2">{plan.description}</p>
+                    </CardHeader>
+                    <CardContent className="flex-grow">
+                      <ul className="space-y-3">
+                        {plan.features.map((feature, featureIndex) => (
+                          <li key={featureIndex} className="flex items-center">
+                            <Check className="h-4 w-4 text-accent mr-2" />
+                            <span className="text-sm">{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </CardContent>
+                    <CardFooter>
+                      <Button className={`w-full ${plan.popular ? "" : "variant-outline"}`}>
+                        {plan.buttonText}
+                      </Button>
+                    </CardFooter>
+                  </Card>
+                ))}
+              </div>
+            </TabsContent>
             <TabsContent value="hosting">
 
-              // Hosting pricing details
+             <div>
+              Coming Soon
+             </div>
 
               {
            false &&   <div className="grid md:grid-cols-3 gap-6">
@@ -121,40 +157,7 @@ const Pricing = () => {
 
               }
             </TabsContent>
-            <TabsContent value="development">
-              <div className="grid md:grid-cols-3 gap-6">
-                {pricingPlans.development.map((plan, index) => (
-                  <Card key={index} className={`flex flex-col h-full ${plan.popular ? "border-accent" : "border-border/50"}`}>
-                    {plan.popular && (
-                      <div className="bg-accent text-white text-center py-1 text-xs font-medium">MOST POPULAR</div>
-                    )}
-                    <CardHeader>
-                      <CardTitle className="text-2xl">{plan.name}</CardTitle>
-                      <div className="mt-4 flex items-baseline">
-                        <span className="text-3xl font-bold">{plan.price}</span>
-                        <span className="ml-1 text-sm text-muted-foreground">{plan.period}</span>
-                      </div>
-                      <p className="text-sm text-muted-foreground mt-2">{plan.description}</p>
-                    </CardHeader>
-                    <CardContent className="flex-grow">
-                      <ul className="space-y-3">
-                        {plan.features.map((feature, featureIndex) => (
-                          <li key={featureIndex} className="flex items-center">
-                            <Check className="h-4 w-4 text-accent mr-2" />
-                            <span className="text-sm">{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
-                    </CardContent>
-                    <CardFooter>
-                      <Button className={`w-full ${plan.popular ? "" : "variant-outline"}`}>
-                        {plan.buttonText}
-                      </Button>
-                    </CardFooter>
-                  </Card>
-                ))}
-              </div>
-            </TabsContent>
+            
           </Tabs>
         </div>
       </main>
