@@ -8,72 +8,65 @@ const portfolioItems = {
   web: [
     {
       title: "E-commerce Platform",
-      client: "FashionRetail",
+      client: "carten",
       description: "A full-featured e-commerce platform with inventory management and payment processing.",
-      image: "https://via.placeholder.com/400x300",
-      tags: ["React", "Node.js", "MongoDB"],
+      image: "/carten.png",
+      tags: ["React", "Spring Boot", "MongoDB"],
     },
     {
-      title: "University Portal",
-      client: "Educa University",
+      title: "Banke Bageshowori Campus Website",
+      client: "Banke Bageshowori Campus",
       description: "A comprehensive portal for students, faculty, and administrators with course management.",
-      image: "https://via.placeholder.com/400x300",
-      tags: ["Angular", "Django", "PostgreSQL"],
-    },
-    {
-      title: "News Website",
-      client: "Daily Chronicle",
-      description: "A modern news website with content management system and subscription features.",
-      image: "https://via.placeholder.com/400x300",
-      tags: ["Next.js", "Strapi", "MySQL"],
-    },
-  ],
-  mobile: [
-    {
-      title: "Fitness Tracking App",
-      client: "HealthFit",
-      description: "An iOS and Android app for tracking workouts, nutrition, and health metrics.",
-      image: "https://via.placeholder.com/400x300",
-      tags: ["React Native", "Firebase"],
-    },
-    {
-      title: "Food Delivery App",
-      client: "QuickBite",
-      description: "A mobile application for ordering food with real-time order tracking.",
-      image: "https://via.placeholder.com/400x300",
-      tags: ["Flutter", "Node.js", "MongoDB"],
-    },
-    {
-      title: "Banking App",
-      client: "SecureBank",
-      description: "A secure mobile banking application with biometric authentication and transaction features.",
-      image: "https://via.placeholder.com/400x300",
-      tags: ["Swift", "Kotlin", "Java"],
-    },
-  ],
-  design: [
-    {
-      title: "Brand Identity",
-      client: "TechStartup",
-      description: "Complete brand identity including logo, color palette, and brand guidelines.",
-      image: "https://via.placeholder.com/400x300",
-      tags: ["Branding", "Identity", "Logo Design"],
-    },
-    {
-      title: "UI/UX Design",
-      client: "FinTech App",
-      description: "User interface and experience design for a financial technology application.",
-      image: "https://via.placeholder.com/400x300",
-      tags: ["UI/UX", "Wireframing", "Prototyping"],
-    },
-    {
-      title: "Marketing Campaign",
-      client: "EcoProducts",
-      description: "Digital marketing campaign including social media assets and web banners.",
-      image: "https://via.placeholder.com/400x300",
-      tags: ["Digital Marketing", "Social Media", "Advertising"],
-    },
-  ],
+      image: "/bbc.png",
+      tags: ["Appwrite", "Reactjs", "PostgreSQL"],
+    }
+  ]
+  // mobile: [
+  //   {
+  //     title: "Fitness Tracking App",
+  //     client: "HealthFit",
+  //     description: "An iOS and Android app for tracking workouts, nutrition, and health metrics.",
+  //     image: "https://via.placeholder.com/400x300",
+  //     tags: ["React Native", "Firebase"],
+  //   },
+  //   {
+  //     title: "Food Delivery App",
+  //     client: "QuickBite",
+  //     description: "A mobile application for ordering food with real-time order tracking.",
+  //     image: "https://via.placeholder.com/400x300",
+  //     tags: ["Flutter", "Node.js", "MongoDB"],
+  //   },
+  //   {
+  //     title: "Banking App",
+  //     client: "SecureBank",
+  //     description: "A secure mobile banking application with biometric authentication and transaction features.",
+  //     image: "https://via.placeholder.com/400x300",
+  //     tags: ["Swift", "Kotlin", "Java"],
+  //   },
+  // ],
+  // design: [
+  //   {
+  //     title: "Brand Identity",
+  //     client: "TechStartup",
+  //     description: "Complete brand identity including logo, color palette, and brand guidelines.",
+  //     image: "https://via.placeholder.com/400x300",
+  //     tags: ["Branding", "Identity", "Logo Design"],
+  //   },
+  //   {
+  //     title: "UI/UX Design",
+  //     client: "FinTech App",
+  //     description: "User interface and experience design for a financial technology application.",
+  //     image: "https://via.placeholder.com/400x300",
+  //     tags: ["UI/UX", "Wireframing", "Prototyping"],
+  //   },
+  //   {
+  //     title: "Marketing Campaign",
+  //     client: "EcoProducts",
+  //     description: "Digital marketing campaign including social media assets and web banners.",
+  //     image: "https://via.placeholder.com/400x300",
+  //     tags: ["Digital Marketing", "Social Media", "Advertising"],
+  //   },
+  // ],
 };
 
 const Portfolio = () => {

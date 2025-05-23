@@ -64,9 +64,9 @@ const Contact = () => {
                     <div>
                       <h3 className="font-medium">Our Location</h3>
                       <p className="text-muted-foreground mt-1">
-                        123 Tech Street<br />
-                        San Francisco, CA 94107<br />
-                        United States
+                        Ratna Rajmarga<br />
+                        Nepalgunj, Banke 21900<br />
+                        Nepal
                       </p>
                     </div>
                   </CardContent>
@@ -78,8 +78,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-medium">Call Us</h3>
                       <p className="text-muted-foreground mt-1">
-                        +1 (555) 123-4567<br />
-                        Monday to Friday, 9am-5pm PST
+                        +977 9828722827<br />
+                        Monday to Friday, 9am-5pm
                       </p>
                     </div>
                   </CardContent>
@@ -91,8 +91,9 @@ const Contact = () => {
                     <div>
                       <h3 className="font-medium">Email Us</h3>
                       <p className="text-muted-foreground mt-1">
-                        info@stringbox.org<br />
-                        support@stringbox.org
+                        <br />
+                        gautamya2059@gmail.com
+                        paudeleverest09@gmail.com
                       </p>
                     </div>
                   </CardContent>
